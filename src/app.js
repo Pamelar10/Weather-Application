@@ -68,8 +68,8 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiKey = "b9338fa434bf42227o1029bt48f71d21";
+  let apiUrl = `http://api.shecodes.io/weather/v1/forecast?lon=${coordinates.lon}&lat={coordinates.lat}&key=${apikey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
 
@@ -100,9 +100,9 @@ function displayTemperature(response) {
 }
 
 function search(city) {
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
+  let apiKey = "b9338fa434bf42227o1029bt48f71d21";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+ axios.get(apiUrl).then(displayTemperature);
 }
 
 function handleSubmit(event) {
