@@ -4,13 +4,13 @@ strong {
 footer {
   text-align: center;
   font-size: 14px;
-  color: #fff;
+  color: rgb(11, 11, 11);
 }
 .weather {
   background: radial-gradient(
     circle at 10% 20%,
-    rgb(0, 93, 133) 0%,
-    rgb(0, 181, 149) 90%
+    rgb(243, 205, 236) 0%,
+    rgb(238, 137, 191) 90%
   );
 
   max-width: 800px;
@@ -84,8 +84,8 @@ a {
   padding: 15px 20px;
 }
 #search-btn {
-  background: #0e9793;
-  border: 1px solid #0e9793;
+  background: #ebd7e2;
+  border: 1px solid #ff03a7;
   border-radius: 6px;
   color: #fff;
   width: 180px;
@@ -102,5 +102,5 @@ a {
   color: #fff;
 }
 .footer {
-  color: #fff;
+  color: rgb(7, 7, 7);
 }
