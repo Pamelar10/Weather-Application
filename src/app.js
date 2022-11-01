@@ -108,7 +108,7 @@ function changeToCelsius(event) {
 }
 
 let fahrenheitTemp = null;
-search("San Francisco");
+search("New York");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
