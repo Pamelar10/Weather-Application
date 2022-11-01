@@ -1,55 +1,106 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+strong {
+  font-size: 18px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.weather {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 93, 133) 0%,
+    rgb(0, 181, 149) 90%
+  );
+
+  max-width: 800px;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  padding: 30px;
+  font-family: sans-serif;
 }
 
-h1 {
-    color: #878787;
-    font-size: 24px;
-    font-weight: 100;
-    line-height: 28px;
-    margin-bottom: 0;
+.temperature {
+  font-size: 60px;
+  color: #fff;
+}
+.temperature-min {
+  margin-left: 10px;
+  color: #ffff;
+}
+.temperature-max {
+  color: #fff;
+  font-weight: 600;
+}
+.wind {
+  padding-bottom: 10px;
+  color: #fff;
+}
+.humidity {
+  color: #fff;
+}
+.date {
+  font-size: 20px;
+  text-align: right;
+  color: #fff;
+}
+.description {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 16px;
+  text-align: right;
+}
+.units .active {
+  color: #fff;
+  cursor: default;
+  text-decoration: none;
+}
+a {
+  color: #a8a8a8;
+  text-decoration: none;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
+.units {
+  color: #a8a8a8;
+  text-decoration: none;
+  line-height: 1;
+  position: relative;
+  top: -25px;
+  font-size: 20px;
 }
-
-li {  
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: rgb(135, 135, 135);
-    font-size: 16px;
-    font-weight: 100;
-    line-height: 19px;
-
+#search-input {
+  border-radius: 6px;
+  border: none;
+  width: 500px;
+  margin: 10px 0;
+  background: #f9f7fe;
+  color: rgba(39, 33, 66, 0.4);
+  display: inline-block;
+  font-size: 16px;
+  height: 25px;
+  line-height: 20px;
+  padding: 15px 20px;
 }
-
-.weather-app {
-   padding: 20px;
-    border: 1px solid;
-    border-radius: 5px;
+#search-btn {
+  background: #0e9793;
+  border: 1px solid #0e9793;
+  border-radius: 6px;
+  color: #fff;
+  width: 180px;
+  margin: 10px 0;
 }
-
-.weather-app-wrapper {
-    max-width: 600px;
-    margin: 30px auto;
+.city {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600px;
+  font-family: sans-serif;
+  text-align: right;
 }
-
-.weather-temperature strong {
-    font-size: 64px;
-    line-height: 1;
-    font-weight: 400;
+.forecast-date {
+  color: #fff;
 }
-
-.weather-temperature .units {
-    position: relative;
-    font-size: 16px;
-}
-
-.weather-temperature img {
-    margin-right: 5px;
-    height: 64px;
-    width: 64px;
+.footer {
+  color: #fff;
 }
