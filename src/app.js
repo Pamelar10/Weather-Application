@@ -2,9 +2,8 @@ function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
   let amPm = hours >= 12 ? "PM" : "AM";
-  if (hours > 12) {
-    hours += ((hours + 11) % 12) + 1;
-  }
+  hours = hours % 12;
+  hours = hours ? hours : 12;
 
   let minutes = date.getMinutes();
   if (minutes < 10) {
